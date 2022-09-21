@@ -14,18 +14,13 @@ namespace ConsoleApp7
 
             int number = Convert.ToInt32(Console.ReadLine());
 
-            while (number>999)
+            if (number % 7 == 1|| number %7 == 2|| number % 7 == 3|| number % 7 == 4|| number % 7 == 5)
             {
-                number /= 10;
-            }
-            if(number<100)
-            {
-                Console.WriteLine("Третьей цифры нет");
+                Console.WriteLine("Нет");
             }
             else
             {
-                number %= 10;
-                Console.WriteLine(number);
+                Console.WriteLine("Да");
             }
            
         }
