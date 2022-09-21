@@ -14,10 +14,20 @@ namespace ConsoleApp7
 
             int number = Convert.ToInt32(Console.ReadLine());
 
-            number /= 10;
-            number %= 10;
-            Console.WriteLine(number);
-
+            while (number>999)
+            {
+                number /= 10;
+            }
+            if(number<100)
+            {
+                Console.WriteLine("Третьей цифры нет");
+            }
+            else
+            {
+                number %= 10;
+                Console.WriteLine(number);
+            }
+           
         }
     }
 }
