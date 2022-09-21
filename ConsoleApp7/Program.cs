@@ -17,6 +17,7 @@ namespace ConsoleApp7
             number /= 10;
             number %= 10;
             Console.WriteLine(number);
+
         }
     }
 }
